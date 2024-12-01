@@ -1,6 +1,7 @@
 ## CUMT多线程公选课抢课脚本
 
 ### 免责声明
++本人更新改进了学长的抢课脚本，包括匹配教务部服务器的改动，验证码登录的cookie跳过实现，仅供技术学习，旧版本详见：https://github.com/EddieIvan01/lessons-robber
 
 + 作者本人已修够所需公选学分，开源此程序只为技术交流，无任何盈利行为
 
@@ -14,7 +15,8 @@
 ***
 
 ### NOTICE!!!
-
+2024/12/2 学校教务部服务器变动，查询了最新ip，做出适应。学校使用验证码组织爬虫模拟登录，并且使用动态数字戳防止获取验证码图片：解决方案使用cookie登录，跳过验证码。cookie如何获取请询问gpt。
+以下为学长19年的实现
 2019/1/8 Add co-routine asynchronous I/O version, it has better performance with fewer resource (35 times per second)
 
 2019/1/9 已验证具有不同年级不同专业的普适性，可放心使用
